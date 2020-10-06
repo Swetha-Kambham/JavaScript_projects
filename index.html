@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="script/css/style.css">
+    <title>javascript project</title>
+</head>
+<body>
+
+    <div class="container-1">
+        <h2>Change your Age</h2>
+        <div class="felx-box-container-1">
+            <div>
+                <button class="btn btn-Primary" onclick="ageIndays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+            
+        </div>
+        <div class="felx-box-container-1">
+            <div id="result"></div>
+        </div>
+       
+    </div>
+    <!--cat Generator Project-->
+    <div class="container-2">
+        <h2>Challange 2:Cat Generator</h2>
+        <button class="btn btn-Success" id="button" onclick="CatGen()">CatGenerator</button>
+        <div class="felx-box-container-2" id='flex-result'>
+            
+        </div>
+
+    </div>
+    <!--Rock,paper and Scissors Game-->
+    <div class="container-3">
+        <h2>Challange 3:Rock Paper and Scissors</h2>
+        <div class="felx-box-rps" id="flex-box-rps-id">
+            <img id="rock"  src="https://i.redd.it/cn7w41ixjj041.jpg"  height="150" width="150" onclick="Game(this)">
+            <img id="paper" src="https://cdn.instructables.com/ORIG/FPO/HEGI/IAY1N6E7/FPOHEGIIAY1N6E7.jpg?auto=webp&frame=1&width=320&md=1434493339" height="150" width="150" onclick="Game(this)">
+            <img id="Scissors" src="https://5.imimg.com/data5/NV/MV/MY-2090899/office-scissor-250x250.jpg" height="150" width="150" onclick="Game(this)">
+        </div>
+    </div>
+    <!--Change all Buttons Colors-->
+    <div class='container-4'>
+        <h2>Challange 4:Change All Colors Of Buttons</h2>
+        <div class='flex-box-color' id='color_change'>
+            <form action="">
+                <select name="backdrop" id="choice" onchange="changeColour(this)">
+                    <option value='random'>Random</option>
+                    <option value='red'>Red</option>
+                    <option value='green'>Green</option>
+                    <option value='reset'>Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">ZOOM</button>
+            <button class="btn btn-danger">Youtube</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Facebook</button>
+        </div>
+    </div>
+    <!-- Challang 5: BlackJack-->
+    <div class='container-5'>
+        <h2>Challange 5:BlackJack</h2>
+        <h3><span id='Rwinner'>Let's Play</span></h3>
+        <div class='flex-box-blackjack-1' id='blackjack1'>
+            <div id='your-box'>
+                <h3 id='man'>You: <span id='you'>0</span></h3>
+            </div>
+            <div id='dealer-box'>
+                <h3 id='deal'>Deal: <span id='opp'>0</span></h3>
+            </div>
+        </div>
+        <div class='flex-box-blackjack-2' id='blackjack2'>
+            <button class='btn btn-warning' id='b1'>Hit</button>
+            <button class='btn btn-primary' id='b2'>stand</button>
+            <button class='btn btn-danger' id='b3'>deal</button>
+        </div>
+        <div class='flex-box-blackjack-3' id='blackjack3'>
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Loses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id='wins'>0</span></td>
+                    <td><span id='loses'>0</span></td>
+                    <td><span id='draws'>0</span></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src='script/js/script.js'></script>
+</body>
+</html>
